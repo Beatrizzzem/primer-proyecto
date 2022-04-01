@@ -1,2 +1,2 @@
-# primer-proyecto
-##clase 1 
+# primer-proyect
+## Clas e 1
