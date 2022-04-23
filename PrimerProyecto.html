@@ -3,34 +3,118 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Página de Big Data</title>
+		<style>
+			/*Editando los tags*/
+			body{
+				background-color:paleturquoise;
+			}
+			table,tr,th,td{
+				border: 1px solid black;
+			}
+			div{
+				border: solid 1px lightpink;
+				margin: 20px;
+				padding: 30px;
+			}
+			/*Editando clases*/
+			.titulo{
+				text-align: center;
+			}
+			.unidad{
+				background-color: gold;
+			}
+			.titulo-unidad{
+				front-size:  30px;
+				text-align: center;
+				background-color: greenyellow;
+				color: grey;
+			}
+			.contenido-unidad{
+				color: fuchsia;
+			}
+			.centrado{
+				text-align: center;
+			}
+			/*Editando Id */
+			#titulo-img{
+				color: chocolate;
+			}
+			#titulo-id{
+				color: olive;
+			}
+		</style>
 	</head>
 	<body>
 		<div>
-	        <h1>Mi primer texto en el body</h1>
+			<!--creación de título con tag h1 -->
+	        <h1 class="titulo" id="titulo-id">Mi primer texto en el body</h1>
 			<div>
-		        <h4>Big Data</h4>
+		        <h4 class="centrado">Big Data</h4>
 		        <div>
 			        <h3>Unidad de HTML</h3>
 			        <p>Aprendiendo las nociones básicas de HTML</p>
-			        <div>
-				        <h4>¿Cómo hacer un link?</h4>
-				        <p>Link (a)</p>
+			        <div class="unidad">
+				        <h4 class="titulo-unidad">¿Cómo hacer un link?</h4>
+				        <p class="contenido-unidad">Link (a)</p>
 				        <a href="https://www.youtube.com/watch?v=ZGsjpuUrKGc">Escuchar Antología de Shakira</a>
 			        </div>
-			        <div>
-			        	<h4>¿Còmo hacer un div? </h4>
-			        	<p>&#60;div&#62;contenido&#60;/div&#62;</p>
+			        <div class="unidad">
+			        	<h4 class="titulo-unidad">¿Còmo hacer un div? </h4>
+			        	<p class="contenido-unidad">&#60;div&#62;contenido&#60;/div&#62;</p>
 			        	<img src="div.png" width="500px">
 			        </div>
-			        <div>
-			        	<h4>¿Cómo insertar imagen?</h4>
-			        	<p>Imagen (img/png)</p>
-			        	<p>&#60;img src="path/nombre_imagen.png" width="500px"/&#62;</p>
+			        <div class="unidad">
+			        	<h4 class="titulo-unidad" id="titulo-img">¿Cómo insertar imagen?</h4>
+			        	<p class="contenido-unidad">Imagen (img/png)</p>
+			        	<p class="contenido-unidad">&#60;img src="path/nombre_imagen.png" width="500px"/&#62;</p>
 			        	<img src="GatoMatrix.jpg" width="500px">
+			        </div>
+			        <div class="unidad">
+			        	<h3 class="titulo-unidad">Tabla (table)</h3>
+			        	<p class="contenido-unidad">¿Cómo crear una tabla?<br>
+			        	&nbsp;&#60;table&#62;<br>
+				        &nbsp;&nbsp;&#60;tr&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;th&#62;Animal&#60;/th&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;th&#62;Nombre&#60;/th&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;th&#62;Link&#60;/th&#62;<br>
+				        &nbsp;&nbsp;&#60;/tr&#62;<br>
+				        &nbsp;&nbsp;&#60;tr&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;td&#62;Perro&#60;/td&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;td&#62;Rocco&#60;/td&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="https://es.wikipedia.org/wiki/Canis_familiaris"&#62;Click aquí&#60;/a&#62;&#60;/td&#62;<br>
+				        &nbsp;&nbsp;&#60;/tr&#62;<br>
+				        &nbsp;&nbsp;&#60;tr&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;td&#62;Gato&#60;/td&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;td&#62;Zumi&#60;/td&#62;<br>
+					    &nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus"&#62;Click aquí&#60;/a&#62;&#60;/td&#62;<br>
+				        &nbsp;&nbsp;&#60;/tr&#62;<br>
+		<div>
+				<!--Creación de una tabla-->
+			<table>
+				<tr>
+					<th>Animal</th>
+					<th>Nombre</th>
+					<th>Link</th>
+				</tr>
+				<tr>
+					<td>Perro</td>
+					<td>Rocco</td>
+					<td><a href="https://es.wikipedia.org/wiki/Canis_familiaris">Click aquí</a></td>
+				</tr>
+				<tr>
+					<td>Gato</td>
+					<td>Zumi</td>
+					<td><a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus">Click aquí</a></td>
+				</tr>
+			</table>
+		</div>
+			</table>
+
+			        	</p>
 			        </div>
 		        </div>
 			</div>
-		    <h6>By Beatriz Espinoza</h6>
 		</div>
 	</body>
+		    <h6>By Beatriz Espinoza</h6>
 </html>
