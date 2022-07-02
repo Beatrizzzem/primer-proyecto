@@ -108,13 +108,60 @@ var_list <-list("ANDRES",1,T,"Ana","Juan",F,"loco","día bonito")
 
 #forma Nro 1
 lista_b <- list()
-for(i in var_list){
-  print(i)
-  if(i == "Ana"){
+for(elemento_de_lista in var_list){
+  print("=========Nueva Iteración======")
+  print(elemento_de_lista)
+    if(elemento_de_lista == "Ana"){
+   print("voy a cambiar Ana por Juan")
    lista_b <- c(lista_b,"Juan")
   }else{
-   lista_b <- c(lista_b,i)
+   lista_b <- c(lista_b,elemento_de_lista)
   }
   Sys.sleep(2)
 }
 print(lista_b)
+
+#########################################################
+
+# forma 2
+resp_length <- length(var_list)
+for(posicion in 1:resp_length){
+ print("========== NUEVA ITERACIÓN========")
+ print(paste("Estamos en la posicion: ",posicion," - y el valor es: ",var_list [posicion]))
+ Sys.sleep(2)
+}
+
+
+
+#################################################
+################FUNCIONES########################
+
+reemplazar<-function(var_iter,val,reemp = ""){
+  print("Init Función reemplazar")
+  respuesta <- list()
+  for(elemento in var_iter){
+   print("========= NUEVA ITERACIÓN ========")
+   print(paste("Estamos en el elemento:",elemento))
+   if (elemento == val){
+     print(paste("Se reemplaza: '",elemento,"' por '",reemp,"'",sep = ""))
+   respuesta <- c(respuesta,reemp)
+   }else{
+     respuesta <- c(respuesta,elemento)
+   }
+  Sys.sleep(2)
+  }
+  print("Fin Función reemplazar")
+  return(respuesta)
+  }
+
+var_list <- list("Andres",1,T,"Ana","Juan",F,"loco","dia bonito")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+var_list <- reemplazar(var_list,"loco","cuerdo")
+
+var_list <- reemplazar(var_list,"Juan")
+
+##################### EXCEL ###########
+
+library(readxl)
+para_ejemplo_de_big_data <- read_excel("para ejemplo de big data.xlsx", sheet = "Hoja1", col_names = FALSE)
+View(para_ejemplo_de_big_data)
